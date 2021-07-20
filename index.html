@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Todo App</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="app-title">Vue TODO app</h1>
+      <todo-form @todo-submitted="addTodo"></todo-form>
+      <todo-list :todos="todos" @remove-todo="removeTodo"></todo-list>
+    </div>
+
+    <!-- Import Js -->
+    <script src="./main.js"></script>
+
+    <!-- Import Components -->
+    <script src="components/TodoForm.js"></script>
+    <script src="components/TodoList.js"></script>
+
+    <!-- Mount App -->
+    <script>app.mount('#app')</script>
+  </body>
+</html>

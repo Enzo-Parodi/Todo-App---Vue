@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-title {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}    
+
+.todo-text-input {
+  margin: 0 10px;
+  padding: 5px 10px;
+  min-width: 50px;
+}
+
+.todo-add-button {
+  background: rgb(55, 55, 55);;
+  color: white;
+  appearance: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-add-button:hover {
+  background: rgb(70, 70, 70);
+}
+
+.todo-list {
+  display: table;
+  margin: auto;
+  min-width: 170px;
+  padding: 0
+}
+
+.todo-list li {
+  display: table-row;
+}
+
+.list-item-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.list-item-content-wrapper input[type=checkbox] {
+  vertical-align: middle;
+}
+
+.todo-remove-button {
+  appearance: none;
+  border: 2px solid rgb(20, 20, 20);
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.todo-remove-button i {
+  font-size: 20px;
+  color: rgb(20, 20, 20)
+}
